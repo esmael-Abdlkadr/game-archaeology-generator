@@ -1,0 +1,5 @@
+.secret
+__pycache__/
+*.pyc
+raw_gen/
+build/
