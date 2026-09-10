@@ -33,12 +33,18 @@ them, which is the same failure the lookup exploited.
 | file | role |
 | --- | --- |
 | `selfplay.py` | move generation, evaluation, policy derivation, one game |
-| `gen_archive.py` | player pools, pairings, parallel play, archive writing |
+| `gen_archive.py` | single-game player pools and pairings (earlier build) |
+| `gen_archive_pairs.py` | player pairs, several games per pair, parallel play, archive writing (current build) |
 
 The labelling harness and grading metric that turn a finished game into its
 released label and score are not part of this repository.
 
-## Player pools
+## Player pairs
+
+Each case of the current build is one pair of players and several games between
+them. On single games the challenge's labels were mostly the luck of that game;
+averaging several games between the same two players dilutes the luck, so more of
+each label reflects the players' habits. Every player belongs to exactly one pair.
 
 Train players are named `A00000…`, test players `B00000…`. The pools are
 prefix-disjoint by construction, so no account can be learned in training and
