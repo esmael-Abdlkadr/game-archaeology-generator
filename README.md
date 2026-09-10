@@ -54,5 +54,6 @@ appears on both sides.
 
 ## Licence
 
-Generator code: MIT. The generated archive and the released dataset are original
-output of this code and are placed under **CC0 1.0**.
+**CC0 1.0 Universal (Public Domain Dedication).** This repository — the
+generator code, the harness and the dataset it produces — is released into the
+public domain. See `LICENSE` in this repository for the full legal text.
